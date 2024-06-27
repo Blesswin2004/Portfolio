@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a79d533895.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <div class="container">
+        <nav>
+            <img src="images/logo.jpg"class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    <div class="header-text">
+        <p>Web desginer</p>
+        <h1>Hi,I am<span> Blesswin Rijo M</span> from India</h1>
+    </div>
+    </div>
+</div>
+   <!-------about------>
+<div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/background.jpg.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>My name is Blesswin Rijo M,I am from Kanyakumari district,I had my SSLC,HSLC in Arunachala matric hr sec school
+                    ,Know i currently 4-year in Velammal Engineering College in CSE-department at Chennai.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link "onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links "onclick="opentab('intership')">Intership</p>
+                        <p class="tab-links "onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab"id="skills">
+                        <ul>
+                            <li><span>C</span><br>CSC Academy</li>
+                            <li><span>C++</span><br>CSC Academy</li>
+                            <li><span>HTML</span><br>CSC Academy</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents "id="intership">
+                        <ul>
+                            <li><span>2021-current</span><br>ui/ux design</li>
+                            <li><span>2023-2024</span><br>Aara info tech</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents "id="education">
+                        <ul>
+                            <li><span>SSLC</span><br>Arunachala matric hr sec school</li>
+                            <li><span>HSLC</span><br>Arunachala matric hr sec school</li>
+                            <li><span>Engineering</span><br>Velammal Engineering College</li>
+                        </ul>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+<!-----------servies---------->
+<div id="Services">
+<div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="Services-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web design</h2>
+            <p>This is my personal data about my complete resume.</p>
+            <a href="#">Learn More</a>
+        </div><br>
+        <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>This is my personal data about my complete resume.</p>
+            <a href="#">Learn More</a>
+        </div><br>
+        <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>App design</h2>
+            <p>This is my personal data about my complete resume.</p>
+            <a href="#">Learn More</a>
+        </div>
+    </div>
+</div>
+</div>
+<!-------------portfolio-------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/background.jpg.jpg">
+            </div>
+            <div class="work">
+                <img src="images/logo.jpg">
+            </div>
+            <div class="work">
+                <img src="images/background.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontents of tabcontents){
+                tabcontents.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
+
